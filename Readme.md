@@ -18,7 +18,7 @@ The model is optimized with a supervised loss on the labeled subset and three un
 
 We use TE loss for semi-supervised keypoint localization and observe that TE loss alone gave minor imporvements ... . In our work we complement the loss with learning additional representations.
 
-See my [blog post](https://olgamoskvyak.github.io/blog/) or the [notebook](https://github.com/olgamoskvyak/tf_equivariance_loss/Examples.ipynb) for the details and examples.
+See my [blog post](https://olgamoskvyak.github.io/blog/unsupervised/losses/2021/03/25/transformation-equivariance-loss.html) or the [notebook](https://github.com/olgamoskvyak/tf_equivariance_loss/Examples.ipynb) for the details and examples.
 
 
 
@@ -27,11 +27,10 @@ TE loss is best used in combination with other supervised and unsupervised losse
 It will not give good results if used alone on unlabeled data.
 
 We use TE loss in our work for semi-supervised keypoint localization to learn
-keypoint heatmaps on the unlabeled subset in combination with the supervised loss on
-the labeled subset.
+keypoint heatmaps on the unlabeled subset in combination with the supervised loss on the labeled subset.
 
 Similar losses are used in the following works:
-* ELT loss (no implementation)
+* [ELT loss](https://arxiv.org/pdf/1709.01591.pdf) (no implementation)
 * [SCOPS: Self-Supervised Co-Part Segmentation](https://varunjampani.github.io/papers/hung19_SCOPS.pdf) implements Equivariance loss with TPS transformations ([code](https://github.com/NVlabs/SCOPS)).
 
 
