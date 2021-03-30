@@ -123,6 +123,9 @@ class TfEquivarianceLoss(nn.Module):
             x = Resize(self.input_hw)(x)
             resize_input = True
 
+        # Move matrices to the save device as input
+        self.tf_matrices = self.tf_matrices.to(x.device)
+
         # Transform image
         tf_x = kornia.warp_affine(
             x.float(),
