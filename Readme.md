@@ -101,8 +101,16 @@ See the [notebook](https://github.com/olgamoskvyak/tf_equivariance_loss/Examples
 * [Kornia](https://github.com/kornia/kornia) = 0.3 (a differentiable computer vision library for PyTorch)
 
 
+## Testing
 
+```
+pip install pytest
+pip install xdoctest
 
+cd tf_equivariance_loss
+pytest
+
+```
 
 
 
